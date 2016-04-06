@@ -1,0 +1,12 @@
+<shell>
+	<configuration>
+		<parameter name="showSceneNumbers" value="false" />
+	</configuration>
+	<section type="multiSlideTS" title="Conclusion" snumber="7000" nextbtntype="trigger">
+	<sco id="ms1" type="ts_setup" sconum="7000" scotitle="NO MORE PHONE HANG-UPS" swffile="sco7000.swf" afile="" vtime="0" vfile="" >
+		<trigger type="done" x="650" y="580">
+			<![CDATA[DONE]]>
+		</trigger>
+		</sco>
+	</section>
+</shell>

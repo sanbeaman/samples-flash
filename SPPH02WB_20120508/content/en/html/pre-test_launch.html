@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="js/APIWrapper.js"></script>
+<script type="text/javascript" src="js/APIWrapper_mg.js"></script>
+<script type="text/javascript" src="js/getRequest.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pre Test</title>
+<link href="css/html.css" rel="stylesheet" type="text/css" />
+<script>
+loadPage();
+var completion_status=doGetValue("cmi.completion_status");
+if (completion_status=="unknown") {
+	doSetValue("cmi.completion_status","incomplete");
+	doCommit("");
+}
+var student_id;
+student_id=doGetValue("cmi.learner_id");
+var path="";
+var href=document.location.href;
+var stringA=href.split("/");
+for (var j=0; j<stringA.length-1; j++) {
+  path+=stringA[j]+"/";
+}
+path+="pre-test_landing.html";
+path="http://perception.dcxdca.com/q/session.dll?CALL=SCORM&SESSION=9507137214098427&Name="+student_id+"&HOME="+path;
+window.location=path;
+function takeLater() {
+	window.opener.doTerminate();
+	window.close();
+}
+</script>
+</head>
+<body>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>

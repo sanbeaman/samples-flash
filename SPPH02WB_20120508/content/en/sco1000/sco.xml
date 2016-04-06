@@ -1,0 +1,12 @@
+<shell>
+	<configuration>
+		<parameter name="showSceneNumbers" value="false" />
+	</configuration>
+	<section type="multiSlideTS" title="Introduction" snumber="1000" nextbtntype="trigger">
+	<sco id="ms1" type="ts_setup" sconum="1000" scotitle="WHY PHONE SKILLS" swffile="sco1000.swf" afile="" vtime="0" vfile="" >
+		<trigger type="done" x="650" y="580">
+			<![CDATA[DONE]]>
+		</trigger>
+		</sco>
+	</section>
+</shell>

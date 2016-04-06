@@ -1,0 +1,148 @@
+<shell>
+	<configuration>
+		<parameter name="showSceneNumbers" value="false" />
+	</configuration>
+	<section type="multiSlideTS" title="Phone Manners" snumber="5000" nextbtntype="trigger">
+		<sco id="ms1" type="ts_setup" scotitle="Mind Your Manners!" sconum="5000" swffile="sco5000.swf" afile="" vtime="0" vfile="" >
+		<trigger type="long" x="745" y="530">
+			<![CDATA[LET'S TAKE A LOOK]]>
+		</trigger>
+		</sco>
+		<sco id="ms2" type="ts_setup" scotitle="Within how many rings should you answer the phone at work?" sconum="5005" swffile="sco5005.swf" afile="" vtime="0" vfile="" >
+		<trigger type="long" x="745" y="530">
+			<![CDATA[NEXT TIP]]>
+		</trigger>
+		</sco>
+		<sco id="ms3" type="ts_listenFirst" scotitle="Tone of Voice: Smile Power " sconum="5010" swffile="sco5010.swf" afile="" vtime="0" vfile="" >
+		<trigger type="normal" x="745" y="540">
+			<![CDATA[NEXT TIP]]>
+		</trigger>
+		<layer type="act_chooseBest" transition="slideleft" x="0" y="190">
+			<activity>
+			<activity_pointers>
+					<pointer id="p1" chevron="vert" width="280" height="44" x="180" y="8">
+						<![CDATA[LISTEN TO BOTH CONVERSATIONS, THEN SELECT THE BEST ONE]]>
+					</pointer>
+			</activity_pointers>
+				<activity_options type='chooseBest'>
+				<option id="convo1" x="410" y="60">
+						<image>assets/IMG5000s.png</image>
+						<btn_listen audiotime="25469">assets/5010_Bad.mp3</btn_listen>
+						<btn_choice isanswer="false">Conversation #2</btn_choice>
+					</option>
+					<option id='convo2' x="80" y="60">
+						<image>assets/IMG5000s.png</image>
+						<btn_listen audiotime="25521">assets/5010_Good.mp3 </btn_listen>
+						<btn_choice isanswer="true">Conversation #1</btn_choice>
+					</option>
+				</activity_options>
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms4" type="ts_listenFirst" scotitle="Tone of Voice: Speed Bump" sconum="5015" swffile="sco5015.swf" afile="" vtime="0" vfile="">
+			<trigger type="normal" x="745" y="540">
+			<![CDATA[NEXT TIP]]>
+			</trigger>
+			<layer type="act_chooseBest" transition="slideleft" x="0" y="190">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="280" height="44" x="180" y="8">
+						<![CDATA[LISTEN TO BOTH CONVERSATIONS, THEN SELECT THE BEST ONE]]>
+					</pointer>
+			</activity_pointers>
+				<activity_options type='chooseBest'>
+					<option id='convo1' x="80" y="60">
+						<image>assets/IMG5000s.png</image>
+						<btn_listen audiotime="10448">assets/5015_Bad.mp3 </btn_listen>
+						<btn_choice isanswer="false"> Conversation #1</btn_choice>
+					</option>
+					<option id="convo2" x="410" y="60">
+						<image>assets/IMG5000s.png</image>
+						<btn_listen audiotime="15595">assets/5015_Good.mp3</btn_listen>
+						<btn_choice isanswer="true">Conversation #2</btn_choice>
+					</option>
+				</activity_options>
+				
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms5" type="ts_listenFirst" scotitle="Tone of Voice: Keep It Clean" sconum="5020" swffile="sco5020.swf" afile="" vtime="0" vfile="">
+			<trigger type="normal" x="745" y="540">
+			<![CDATA[NEXT TIP]]>
+			</trigger>
+		<layer type="act_chooseBest" transition="slideleft" x="0" y="210">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="280" height="44" x="180" y="8">
+						<![CDATA[LISTEN TO BOTH CONVERSATIONS, THEN SELECT THE BEST ONE]]>
+					</pointer>
+			</activity_pointers>
+				<activity_options type='chooseBest'>
+					<option id='convo1' x="80" y="60">
+						<image>assets/IMG5000s.png</image>
+						<btn_listen audiotime="28133"> assets/5020_Good.mp3</btn_listen>
+						<btn_choice isanswer="true">Conversation #1</btn_choice>
+					</option>
+					<option id="convo2" x="410" y="60">
+						<image>assets/IMG5000s.png</image>
+						<btn_listen audiotime="17684">assets/5020_Bad.mp3 </btn_listen>
+						<btn_choice isanswer="false">Conversation #2</btn_choice>
+					</option>
+				</activity_options>
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms6" type="ts_listenFirst" scotitle="Turnoffs: Just Say No to Jargon" sconum="5025" swffile="sco5025.swf" afile="" vtime="0" vfile="">
+			<trigger type="normal" x="745" y="540">
+			<![CDATA[NEXT TIP]]>
+			</trigger>
+			<layer type="act_chooseBest" transition="slideleft" x="0" y="230">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="280" height="44" x="180" y="8">
+						<![CDATA[LISTEN TO BOTH CONVERSATIONS, THEN SELECT THE BEST ONE]]>
+					</pointer>
+			</activity_pointers>
+				<activity_options type='chooseBest'>
+					<option id='convo1' x="80" y="50">
+						<image>assets/IMG5000s.png</image>
+						<btn_listen audiotime="17606">assets/5025_Bad.mp3 </btn_listen>
+						<btn_choice isanswer="false">Conversation #1</btn_choice>
+					</option>
+					<option id="convo2" x="410" y="50">
+					<image>assets/IMG5000s.png</image>
+						<btn_listen audiotime="33985">assets/5025_Good.mp3</btn_listen>
+						<btn_choice isanswer="true">Conversation #2</btn_choice>
+					</option>
+				</activity_options>
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms7" type="ts_listenFirst" scotitle="Turnoffs: Tune Up Your Attitude"sconum="5030" swffile="sco5030.swf" afile="" vtime="0" vfile="">
+			<trigger type="done" x="650" y="580">
+			<![CDATA[DONE]]>
+			</trigger>
+		<layer type="act_chooseBest" transition="slideleft" x="0" y="245">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="280" height="44" x="180" y="8">
+						<![CDATA[LISTEN TO BOTH CONVERSATIONS, THEN SELECT THE BEST ONE]]>
+					</pointer>
+			</activity_pointers>
+				<activity_options type='chooseBest'>
+					<option id="convo1" x="410" y="50">
+						<image>assets/IMG5000s.png</image>
+						<btn_listen audiotime="5694">assets/5030_Bad.mp3 </btn_listen>
+						<btn_choice isanswer="false">Conversation #2</btn_choice>
+					</option>
+						<option id='convo2' x="80" y="50">
+						<image>assets/IMG5000s.png</image>
+						<btn_listen audiotime="32626">assets/5030_Good.mp3</btn_listen>
+						<btn_choice isanswer="true">Conversation #1</btn_choice>
+					</option>
+				</activity_options>
+			</activity>
+		</layer>
+		</sco>
+	</section>
+</shell>

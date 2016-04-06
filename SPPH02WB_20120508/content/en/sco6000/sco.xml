@@ -1,0 +1,153 @@
+<shell>
+	<configuration>
+		<parameter name="showSceneNumbers" value="false" />
+	</configuration>
+	<section type="multiSlideTS" title="Challenging Calls" snumber="6000" nextbtntype="trigger">
+		<sco id="ms1" type="ts_setup" sconum="6000" scotitle="Are YOU Up to the Challenge? the CAll" swffile="sco6000.swf" afile="" vtime="0" vfile="" >
+		<trigger type="normal" x="745" y="540">
+			<![CDATA[THIS WAY]]>
+		</trigger>
+		</sco>
+		<sco id="ms2" type="ts_listenFirst" sconum="6005" scotitle="HOW SHOULD YOU HANDLE A FAST-TALKER?" swffile="sco6005.swf" afile="" vtime="0" vfile="" >
+		<trigger type="long" x="745" y="540">
+			<![CDATA[NEXT CHALLENGE]]>
+		</trigger>
+		<layer type="act_selectAllSimple" transition="fadeOn">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="190" height="30" x="260" y="100">
+						<![CDATA[SELECT THE PHONE ICON]]>
+					</pointer>
+					<pointer id="p2" chevron="vert" width="280" height="30" x="230" y="300">
+						<![CDATA[SELECT ALL THAT APPLY]]>
+					</pointer>
+				</activity_pointers>
+				<activity_answers x="230" y="340" padding="4" width="470">
+					<btn_choice id="a1" isanswer="true"><![CDATA[Apologize for not being able to keep up.]]></btn_choice>
+					<btn_choice id="a2" isanswer="false"><![CDATA[Match the customer’s rate of speed.]]></btn_choice>
+					<btn_choice id="a3" isanswer="false"><![CDATA[Repeat their comments to see if you understood.]]></btn_choice>
+					<btn_choice id="a4" isanswer="true"><![CDATA[Ask them to repeat their comments more slowly.]]></btn_choice>
+				</activity_answers>
+				<activity_buttons>
+					<btn_listen id="part1" x="375" y="144" audiotime="16640" afile="assets/6005_Fasttalker.mp3"></btn_listen>
+					<btn_checkAnswer id="feedback" x="640" y="666" audiotime="" afile="">
+					</btn_checkAnswer>
+				</activity_buttons>	
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms3" type="ts_listenFirst" sconum="6010" scotitle="HOW SHOULD YOU HANDLE A LONG-WINDED?" swffile="sco6010.swf" afile="" vtime="0" vfile="" >
+		<trigger type="long" x="745" y="540">
+			<![CDATA[NEXT CHALLENGE]]>
+		</trigger>
+		<layer type="act_selectAllSimple" transition="fadeOn">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="190" height="30" x="260" y="100">
+						<![CDATA[SELECT THE PHONE ICON]]>
+					</pointer>
+					<pointer id="p2" chevron="vert" width="280" height="30" x="230" y="300">
+						<![CDATA[SELECT ALL THAT APPLY]]>
+					</pointer>
+				</activity_pointers>
+				<activity_answers x="230" y="340" padding="4" width="470">
+					<btn_choice id="a1" isanswer="false"><![CDATA[Wait patiently until they finish.]]></btn_choice>
+					<btn_choice id="a2" isanswer="true"><![CDATA[Politely interrupt them.]]></btn_choice>
+					<btn_choice id="a3" isanswer="false"><![CDATA[Repeat their comments to see if you understood.]]></btn_choice>
+					<btn_choice id="a4" isanswer="true"><![CDATA[Politely ask them to comment on the vehicle needs only.]]></btn_choice>
+				</activity_answers>
+				<activity_buttons>
+					<btn_listen id="part1" x="375" y="144"  audiotime="24946" afile="assets/6010_Longwinded.mp3"></btn_listen>
+					<btn_checkAnswer id="feedback" x="640" y="666" audiotime="" afile="">
+					</btn_checkAnswer>
+				</activity_buttons>	
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms4" type="ts_listenFirst" sconum="6015" scotitle="HOW SHOULD YOU HANDLE DISTRACTED?" swffile="sco6015.swf" afile="" vtime="0" vfile="" >
+		<trigger type="long" x="745" y="540">
+			<![CDATA[NEXT CHALLENGE]]>
+		</trigger>
+		<layer type="act_selectAllSimple" transition="fadeOn">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="190" height="30" x="260" y="100">
+						<![CDATA[SELECT THE PHONE ICON]]>
+					</pointer>
+					<pointer id="p2" chevron="vert" width="280" height="30" x="230" y="300">
+						<![CDATA[SELECT ALL THAT APPLY]]>
+					</pointer>
+				</activity_pointers>
+				<activity_answers x="230" y="340" padding="4" width="470">
+					<btn_choice id="a1" isanswer="true"><![CDATA[Ask direct questions]]></btn_choice>
+					<btn_choice id="a2" isanswer="false"><![CDATA[Ask the nature of the distraction.]]></btn_choice>
+					<btn_choice id="a3" isanswer="false"><![CDATA[Repeat their comments to see if you understood.]]></btn_choice>
+					<btn_choice id="a4" isanswer="true"><![CDATA[Request another time to talk when distractions are minimal]]></btn_choice>
+				</activity_answers>
+				<activity_buttons>
+					<btn_listen id="part1" x="375" y="144"  audiotime="30000" afile="assets/6015_Distracted.mp3"></btn_listen>
+					<btn_checkAnswer id="feedback" x="640" y="666" audiotime="" afile="">
+					</btn_checkAnswer>
+				</activity_buttons>	
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms5" type="ts_listenFirst" sconum="6020" scotitle="HOW SHOULD YOU HANDLE THE HARD TO UNDERSTAND?" swffile="sco6020.swf" afile="" vtime="0" vfile="" >
+		<trigger type="long" x="745" y="540">
+			<![CDATA[NEXT CHALLENGE]]>
+		</trigger>
+		<layer type="act_selectAllSimple" transition="fadeOn">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="190" height="30" x="260" y="100">
+						<![CDATA[SELECT THE PHONE ICON]]>
+					</pointer>
+					<pointer id="p2" chevron="vert" width="280" height="30" x="230" y="300">
+						<![CDATA[SELECT ALL THAT APPLY]]>
+					</pointer>
+				</activity_pointers>
+				<activity_answers x="230" y="340" padding="4" width="470">
+					<btn_choice id="a1" isanswer="true"><![CDATA[Apologize to the customer for being unable to understand him or her.]]></btn_choice>
+					<btn_choice id="a2" isanswer="false"><![CDATA[Take the phone to a quieter location.]]></btn_choice>
+					<btn_choice id="a3" isanswer="false"><![CDATA[Repeat their comments to see if you understood.]]></btn_choice>
+					<btn_choice id="a4" isanswer="true"><![CDATA[Ask them to repeat their comments more slowly.]]></btn_choice>
+				</activity_answers>
+				<activity_buttons>
+					<btn_listen id="part1" x="375" y="144"  audiotime="11206" afile="assets/6020_Accent.mp3"></btn_listen>
+					<btn_checkAnswer id="feedback" x="640" y="666" audiotime="" afile="">
+					</btn_checkAnswer>
+				</activity_buttons>	
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms6" type="ts_listenFirst" sconum="6025" scotitle="HOW SHOULD YOU HANDLE AN IRATE CALLER?" swffile="sco6025.swf" afile="" vtime="0" vfile="" >
+		<trigger type="done" x="650" y="580">
+			<![CDATA[DONE]]>
+		</trigger>
+		<layer type="act_selectAllSimple" transition="fadeOn">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="190" height="30" x="260" y="100">
+						<![CDATA[SELECT THE PHONE ICON]]>
+					</pointer>
+					<pointer id="p2" chevron="vert" width="280" height="30" x="230" y="290">
+						<![CDATA[SELECT ALL THAT APPLY]]>
+					</pointer>
+				</activity_pointers>
+				<activity_answers x="230" y="330" padding="4" width="470">
+					<btn_choice id="a1" isanswer="false"><![CDATA[Begin apologizing right away.]]></btn_choice>
+					<btn_choice id="a2" isanswer="true"><![CDATA[Let them vent; say “I understand” or “I see what you are saying.”]]></btn_choice>
+					<btn_choice id="a3" isanswer="true"><![CDATA[Partner with customer by offering suggestions for resolution.]]></btn_choice>
+					<btn_choice id="a4" isanswer="false"><![CDATA[Find out what the customer wants and offer to provide it.]]></btn_choice>
+					<btn_choice id="a5" isanswer="true"><![CDATA[Agree on a plan.]]></btn_choice>
+				</activity_answers>
+				<activity_buttons>
+					<btn_listen id="part1" x="375" y="144"  audiotime="19591" afile="assets/6025_Irate.mp3"></btn_listen>
+					<btn_checkAnswer id="feedback" x="640" y="666" audiotime="" afile="">
+					</btn_checkAnswer>
+				</activity_buttons>	
+			</activity>
+		</layer>
+		</sco>
+	</section>
+</shell>

@@ -1,0 +1,48 @@
+<shell>
+	<configuration>
+		<parameter name="showSceneNumbers" value="false" />
+	</configuration>
+	<section type="multiSlideTS" title="Customer's Big Event" snumber="2000" nextbtntype="trigger">
+		<sco id="ms1" type="Click2Play_linear" sconum="2000" scotitle="Call Dealership" swffile="sco2000.swf" afile="" vtime="0" vfile="" >
+		<trigger type="normal" x="745" y="530">
+			<![CDATA[THIS WAY]]>
+		</trigger>
+		<layer type="act_c2pLinear" transition="static">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="horiz" width="180" height="30" x="185" y="68">
+						<![CDATA[CALL THE DEALERSHIP]]>
+					</pointer>
+				</activity_pointers>
+				<activity_buttons>
+					<btn_listen id="startSwf" label="" x="388" y="68"></btn_listen>
+				</activity_buttons>	
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms2" type="ts_setup" sconum="2010" scotitle="Interuption - or big event?" swffile="sco2010.swf" afile="" vtime="0" vfile="" >
+		<trigger type="normal" x="745" y="530">
+			<![CDATA[THIS WAY]]>
+		</trigger>
+		</sco>
+		<sco id="ms3" type="Click2Play_branch" scotitle="Branching" swffile="sco2015.swf" afile="" vtime="0" vfile="" >
+		<trigger type="done" x="650" y="580">
+			<![CDATA[DONE]]>
+		</trigger>
+		<layer type="act_click2play" transition="slideup">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="130" height="30" x="375" y="30">
+						<![CDATA[SELECT EACH]]>
+					</pointer>
+				</activity_pointers>
+				<activity_buttons>
+					<btn_icon id="b1" label="Be     Engaged" x="350" y="80" swffile="sco2020.swf" >assets/ICON_brain.png</btn_icon>
+					<btn_icon id="b2" label="Slow     Down" x="484" y="80" swffile="sco2025.swf">assets/ICON_hand.png</btn_icon>
+					<btn_icon id="b3" label="Be Empathetic" x="618" y="80" swffile="sco2030.swf">assets/ICON_ear.png</btn_icon>
+				</activity_buttons>	
+			</activity>
+		</layer>
+		</sco>
+	</section>
+</shell>

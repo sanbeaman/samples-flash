@@ -1,0 +1,21 @@
+<shell>
+	<configuration>
+		<parameter name="showSceneNumbers" value="false" />
+	</configuration>
+	<section type="multiSlideTS" title="Reference Tools" snumber="8000" nextbtntype="trigger">
+	<sco id="ms1" type="ts_buttons" sconum="8000" scotitle="Reference Tools" swffile="sco8000.swf" afile="" vtime="0" vfile="" >
+		<trigger type="done" x="650" y="580">
+			<![CDATA[DONE]]>
+		</trigger>
+		<layer type="act_buttons" transition="fadeon">
+			<activity>
+				<activity_buttons>
+					<btn_pdf id="pdf1" label="CHALLENGING CALLS" x="100" y="130" audiotime="4780" sfile="assets/Challenging_Calls.pdf">  </btn_pdf>
+					<btn_pdf id="pdf2" label="STRUCTURING THE CALL" x="100" y="170" audiotime="6810" sfile="assets/Structuring_the_Call.pdf">
+					</btn_pdf>
+				</activity_buttons>	
+			</activity>
+		</layer>
+		</sco>
+	</section>
+</shell>

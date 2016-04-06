@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="js/APIWrapper.js"></script>
+<script type="text/javascript" src="js/APIWrapper_mg.js"></script>
+<script type="text/javascript" src="js/getRequest.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Post Test</title>
+<script type="text/javascript">
+<!--
+var post_score=0;
+var url=''+this.location;
+if (url.indexOf('?')>0) {
+	var query=url.substring(url.indexOf('?')+1);
+	queryA=query.split("&");
+	for (i=0; i<queryA.length; i++) {
+		if (queryA[i].substring(0,queryA[i].indexOf('='))=="SCORE") {
+			post_score=queryA[i].substring(queryA[i].indexOf('=')+1);
+		}
+	}
+}
+loadPage();
+var survey_status,complete_status,success_status;
+complete_status=doGetValue("cmi.completion_status");
+survey_status=doGetValue("cmi.location");
+success_status=doGetValue("cmi.success_status");
+saveInfo();
+doneClicked();
+function saveInfo() {
+	if (window.post_score) {
+	  doSetValue("cmi.score.raw",post_score);
+		var scaled_score=post_score/100;
+		doSetValue("cmi.score.scaled",scaled_score);
+		if (post_score>=80) {
+			doSetValue("cmi.success_status","passed");
+			doSetValue("cmi.completion_status","completed");
+		} else if (complete_status=="unknown") {
+		  doSetValue("cmi.completion_status","incomplete");
+		}
+	}
+}
+-->
+</script>
+<link href="css/html.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="styles/ie.css" />
+<![endif]-->
+</head>
+<body id="postest">
+<div id="container">	
+<div id="text">
+Loading...
+</div>
+</div>
+</body>
+</html>

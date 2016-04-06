@@ -1,0 +1,9 @@
+<shell>
+	<configuration>
+		<parameter name="showTimeCode" value="true" />
+	</configuration>
+	<section type="splash" title="" snumber="505" nextbtntype="start">
+		<sco id="sp0" type="splash" sconumber="0505" scotitle="" swffile="sco0505.swf" afile="" vfile="">
+	</sco>
+</section>
+</shell>

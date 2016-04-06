@@ -1,0 +1,170 @@
+<shell>
+	<configuration>
+		<parameter name="showSceneNumbers" value="false" />
+	</configuration>
+	<section type="multiSlideTS" title="Elements of Phone Skills" snumber="4000" nextbtntype="trigger">
+		<sco id="ms1" type="ts_setup" sconum="4000" scotitle="Well Said!" swffile="sco4000.swf" afile="" vtime="0" vfile="" >
+		<trigger type="long" x="745" y="530">
+			<![CDATA[LET'S TAKE A LOOK]]>
+		</trigger>
+		</sco>
+		<sco id="ms2" type="ts_listenFirst" sconum="4005" scotitle="Tone of Voice: Smile Power " swffile="sco4005.swf" afile="" vtime="0" vfile="" >
+		<trigger type="normal" x="745" y="530">
+			<![CDATA[NEXT TIP]]>
+		</trigger>
+		<layer type="act_chooseBest" transition="slideup" x="0" y="190">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="280" height="44" x="180" y="8">
+						<![CDATA[LISTEN TO BOTH CONVERSATIONS, THEN SELECT THE BEST ONE]]>
+					</pointer>
+				</activity_pointers>
+				<activity_options type='chooseBest'>
+					<option id='convo1' x="80" y="60">
+						<image>assets/person1.png</image>
+						<btn_listen audiotime="5485"> assets/4005_Good.mp3 </btn_listen>
+						<btn_choice isanswer="true"> Conversation #1</btn_choice>
+					</option>
+					<option id="convo2" x="410" y="60">
+						<image>assets/person1.png</image>
+						<btn_listen audiotime="5825"> assets/4005_Bad.mp3</btn_listen>
+						<btn_choice isanswer="false">Conversation #2</btn_choice>
+					</option>
+				</activity_options>
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms3" type="ts_listenFirst" scotitle="Tone of Voice: Volume Control" sconum="4010" swffile="sco4010.swf" afile="" vtime="0" vfile="">
+			<trigger type="normal" x="745" y="530">
+			<![CDATA[NEXT TIP]]>
+			</trigger>
+			<layer type="act_chooseBest" transition="slideup" x="0" y="190">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="280" height="44" x="180" y="8">
+						<![CDATA[LISTEN TO BOTH CONVERSATIONS, THEN SELECT THE BEST ONE]]>
+					</pointer>
+				</activity_pointers>
+				<activity_options type='chooseBest'>
+					<option id='convo1' x="80" y="60">
+						<image>assets/person1.png</image>
+						<btn_listen audiotime="9273"> assets/4010_Bad.mp3 </btn_listen>
+						<btn_choice isanswer="false"> Conversation #1</btn_choice>
+					</option>
+					<option id="convo2" x="410" y="60">
+						<image>assets/person1.png</image>
+						<btn_listen audiotime="8124"> assets/4010_Good.mp3</btn_listen>
+						<btn_choice isanswer="true">Conversation #2</btn_choice>
+					</option>
+				</activity_options>
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms4" type="ts_listenFirst" sconum="4015" scotitle="Tone of Voice: Speed Bump" swffile="sco4015.swf" afile="" vtime="0" vfile="">
+			<trigger type="normal" x="745" y="540">
+			<![CDATA[NEXT TIP]]>
+			</trigger>
+			<layer type="act_chooseBest" transition="slideup" x="0" y="230">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="280" height="44" x="180" y="8">
+						<![CDATA[LISTEN TO BOTH CONVERSATIONS, THEN SELECT THE BEST ONE]]>
+					</pointer>
+				</activity_pointers>
+				
+				<activity_options type='chooseBest'>
+					<option id='convo1' x="80" y="50">
+						<image>assets/person1.png</image>
+						<btn_listen audiotime="7888">assets/4015_Bad.mp3 </btn_listen>
+						<btn_choice isanswer="false">Conversation #1</btn_choice>
+					</option>
+					<option id="convo2" x="410" y="50">
+						<image>assets/person1.png</image>
+						<btn_listen audiotime="10000">assets/4015_Good.mp3</btn_listen>
+						<btn_choice isanswer="true">Conversation #2</btn_choice>
+					</option>
+				</activity_options>
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms5" type="ts_listenFirst" sconum="4020" scotitle="Tone of Voice: Keep It Clean" swffile="sco4020.swf" afile="" vtime="0" vfile="">
+			<trigger type="normal" x="745" y="540">
+			<![CDATA[NEXT TIP]]>
+			</trigger>
+			<layer type="act_chooseBest" transition="slideup" x="0" y="230">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="280" height="44" x="180" y="8">
+						<![CDATA[LISTEN TO BOTH CONVERSATIONS, THEN SELECT THE BEST ONE]]>
+					</pointer>
+				</activity_pointers>
+				
+				<activity_options type='chooseBest'>
+					<option id='convo1' x="80" y="50">
+						<image>assets/person1.png</image>
+						<btn_listen audiotime="6661"> assets/4020_Good.mp3</btn_listen>
+						<btn_choice isanswer="true"> Conversation #1</btn_choice>
+					</option>
+					<option id="convo2" x="410" y="50">
+						<image>assets/person1.png</image>
+						<btn_listen audiotime="6008"> assets/4020_Bad.mp3 </btn_listen>
+						<btn_choice isanswer="false">Conversation #2</btn_choice>
+					</option>
+				</activity_options>
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms6" type="ts_listenFirst" sconum="4025" scotitle="Turnoffs: Just Say “No” to Jargon" swffile="sco4025.swf" afile="" vtime="0" vfile="">
+			<trigger type="normal" x="745" y="540">
+			<![CDATA[NEXT TIP]]>
+			</trigger>
+			<layer type="act_chooseBest" transition="slideup" x="0" y="230">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="280" height="44" x="180" y="8">
+						<![CDATA[LISTEN TO BOTH CONVERSATIONS, THEN SELECT THE BEST ONE]]>
+					</pointer>
+				</activity_pointers>
+				<activity_options type='chooseBest'>
+					<option id='convo1' x="80" y="50">
+						<image>assets/person1.png</image>
+						<btn_listen audiotime="13884"> assets/4025_Good.mp3</btn_listen>
+						<btn_choice isanswer="true"> Conversation #1</btn_choice>
+					</option>
+					<option id="convo2" x="410" y="50">
+						<image>assets/person1.png</image>
+						<btn_listen audiotime="9247"> assets/4025_Bad.mp3 </btn_listen>
+						<btn_choice isanswer="false">Conversation #2</btn_choice>
+					</option>
+				</activity_options>
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms7" type="ts_listenFirst" sconum="4030"scotitle="Turns-Offs: Tune Up Your Tude" swffile="sco4030.swf" afile="" vtime="0" vfile="">
+			<trigger type="done" x="650" y="580">
+			<![CDATA[DONE]]>
+			</trigger>
+			<layer type="act_chooseBest" transition="slideup" x="0" y="230">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="vert" width="280" height="44" x="180" y="8">
+						<![CDATA[LISTEN TO BOTH CONVERSATIONS, THEN SELECT THE BEST ONE]]>
+					</pointer>
+				</activity_pointers>
+				<activity_options type='chooseBest'>
+					<option id="convo1" x="410" y="50">
+						<image>assets/person1.png</image>
+						<btn_listen audiotime="38269">assets/4030_Bad.mp3 </btn_listen>
+						<btn_choice isanswer="false">Conversation #2</btn_choice>
+					</option>
+					<option id='convo2' x="80" y="50">
+						<image>assets/person1.png</image>
+						<btn_listen audiotime="24000">assets/4030_Good.mp3</btn_listen>
+						<btn_choice isanswer="true">Conversation #1</btn_choice>
+					</option>
+				</activity_options>
+			</activity>
+		</layer>
+		</sco>
+	</section>
+</shell>

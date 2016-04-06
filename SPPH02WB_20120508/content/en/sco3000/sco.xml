@@ -1,0 +1,144 @@
+<shell>
+	<configuration>
+		<parameter name="showSceneNumbers" value="false" />
+	</configuration>
+	<section type="multiSlideTS" title="Structuring the Call" snumber="3000" nextbtntype="trigger">
+	<sco id="ms1" type="ts_setup" sconum="3000" scotitle="Structuring the Call" swffile="sco3000.swf" afile="" vtime="0" vfile="" >
+		<trigger type="normal" x="745" y="530">
+			<![CDATA[THIS WAY]]>
+		</trigger>
+		</sco>
+		<sco id="ms2" type="ts_setup" sconum="3005" scotitle="Structuring the Call" swffile="sco3005.swf" afile="" vtime="0" vfile="" >
+		<trigger type="normal" x="745" y="530">
+			<![CDATA[THIS WAY]]>
+		</trigger>
+		</sco>
+		<sco id="ms3" type="ts_setup" sconum="3010" scotitle="Structuring the Call" swffile="sco3010.swf" afile="" vtime="0" vfile="" >
+		<trigger type="normal" x="745" y="530">
+			<![CDATA[THIS WAY]]>
+		</trigger>
+		</sco>
+		<sco id="ms4" type="ts_setup" sconum="3015" scotitle="Structuring the Call" swffile="sco3015.swf" afile="" vtime="0" vfile="" >
+		<trigger type="long" x="745" y="530">
+			<![CDATA[NOW GIVE IT A TRY]]>
+		</trigger>
+		</sco>
+<sco id="ms5" type="ts_listenFirst" sconum="3020" scotitle="Part #1:Opening" swffile="sco3020.swf" afile="" vtime="0" vfile="" >
+		<trigger type="long" x="745" y="530">
+			<![CDATA[TRY ANOTHER ONE]]>
+		</trigger>
+		<layer type="act_selectAll2" transition="slideLeft">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="horiz" width="170" height="30" x="100" y="120">
+						<![CDATA[SELECT TO LISTEN]]>
+					</pointer>
+					<pointer id="p2" chevron="vert" width="280" height="30" x="360" y="164">
+						<![CDATA[SELECT THE CORRECT ACTIONS YOU HEAR]]>
+					</pointer>
+				</activity_pointers>
+				<activity_answers x="280" y="210" padding="4" width="340">
+					<btn_choice id="a1" isanswer="false"><![CDATA[Thank the customer for calling.]]></btn_choice>
+					<btn_choice id="a2" isanswer="true"><![CDATA[Introduce your department and yourself.]]></btn_choice>
+					<btn_choice id="a3" isanswer="true"><![CDATA[Ask how you can be of service.]]></btn_choice>
+				</activity_answers>
+				<activity_buttons>
+					<btn_listen id="part1" x="280" y="120" audiotime="3994" afile="assets/3020_Incorrect.mp3">  </btn_listen>
+					<btn_listen id="part2" x="280" y="120" audiotime="5903" afile="assets/3020_Correct.mp3">
+						 <cuepoints id="1">
+          					<cuPo cueName="a1" cueTime="603"/>
+          					<cuPo cueName="a2" cueTime="2500"/>
+          					<cuPo cueName="a3" cueTime="4200"/>
+        				</cuepoints>
+					</btn_listen>
+					<btn_checkAnswer id="feedback" x="560" y="666" audiotime="7340" afile="assets/3020_Feedback.mp3">
+					</btn_checkAnswer>
+				</activity_buttons>	
+				<activity_feedback>
+					<feedback_positive><![CDATA[The Advisor did not thank the customer]]></feedback_positive>
+					<feedback_negative><![CDATA[The Advisor did not thank the customer]]></feedback_negative>
+					</activity_feedback>
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms6" type="ts_listenFirst" sconum="3025" scotitle="Part #2:Discovery" swffile="sco3025.swf" afile="" vtime="0" vfile="" >
+		<trigger type="long" x="745" y="530">
+			<![CDATA[TRY ANOTHER ONE]]>
+		</trigger>
+		<layer type="act_selectAll2" transition="slideLeft">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="horiz" width="170" height="30" x="100" y="120">
+						<![CDATA[SELECT TO LISTEN]]>
+					</pointer>
+					<pointer id="p2" chevron="vert" width="280" height="30" x="360" y="164">
+						<![CDATA[SELECT THE CORRECT ACTIONS YOU HEAR]]>
+					</pointer>
+				</activity_pointers>
+				<activity_answers x="280" y="210" padding="4" width="340">
+					<btn_choice id="a3" isanswer="true"><![CDATA[Customer's name.]]></btn_choice>
+					<btn_choice id="a2" isanswer="false"><![CDATA[Make/model of car.]]></btn_choice>
+					<btn_choice id="a1" isanswer="true"><![CDATA[What is the customer's primary concern?]]></btn_choice>
+					<btn_choice id="a4" isanswer="true"><![CDATA[Have they been to the dealership before?]]></btn_choice>
+				</activity_answers>
+				<activity_buttons>
+					<btn_listen id="part1" x="280" y="120" audiotime="19252" afile="assets/3025_Incorrect.mp3">  </btn_listen>
+					<btn_listen id="part2" x="280" y="120" audiotime="27115" afile="assets/3025_Correct.mp3">
+						 <cuepoints id="1">
+          					<cuPo cueName="a1" cueTime="6080"/>
+          					<cuPo cueName="a2" cueTime="7805"/>
+          					<cuPo cueName="a3" cueTime="13400"/>
+          					<cuPo cueName="a4" cueTime="17000"/>
+        				</cuepoints>
+					</btn_listen>
+					<btn_checkAnswer id="feedback" x="560" y="666" audiotime="7183" afile="assets/3025_Feedback.mp3">
+					</btn_checkAnswer>
+				</activity_buttons>	
+				<activity_feedback>
+					<feedback_positive><![CDATA[The make and model of the vehicle was not established]]></feedback_positive>
+					<feedback_negative><![CDATA[The make and model of the vehicle was not established]]></feedback_negative>
+					</activity_feedback>
+			</activity>
+		</layer>
+		</sco>
+		<sco id="ms7" type="ts_listenFirst" sconum="3030" scotitle="Part #3:Wrap-Up" swffile="sco3030.swf" afile="" vtime="0" vfile="" >
+		<trigger type="done" x="650" y="580">
+			<![CDATA[DONE]]>
+		</trigger>
+		<layer type="act_selectAll2" transition="slideLeft">
+			<activity>
+				<activity_pointers>
+					<pointer id="p1" chevron="horiz" width="170" height="30" x="100" y="120">
+						<![CDATA[SELECT TO LISTEN]]>
+					</pointer>
+					<pointer id="p2" chevron="vert" width="280" height="30" x="360" y="164">
+						<![CDATA[SELECT THE CORRECT ACTIONS YOU HEAR]]>
+					</pointer>
+				</activity_pointers>
+				<activity_answers x="280" y="210" padding="4" width="340">
+					<btn_choice id="a1" isanswer="false"><![CDATA[Outline the recommended next steps.]]></btn_choice>
+					<btn_choice id="a2" isanswer="false"><![CDATA[Agree to a plan, confirming the details.]]></btn_choice>
+					<btn_choice id="a3" isanswer="true"><![CDATA[Thank the customer for calling.]]></btn_choice>
+				</activity_answers>
+				<activity_buttons>
+					<btn_listen id="part1" x="280" y="120" audiotime="14706" afile="assets/3030_Incorrect.mp3">  </btn_listen>
+					<btn_listen id="part2" x="280" y="120" audiotime="28029" afile="assets/3030_Correct.mp3">
+						 <cuepoints id="1">
+          					<cuPo cueName="a1" cueTime="3900"/>
+          					<cuPo cueName="a2" cueTime="16829"/>
+          					<cuPo cueName="a3" cueTime="24682"/>
+        				</cuepoints>
+					</btn_listen>
+					<btn_checkAnswer id="feedback" x="560" y="666" audiotime="7366" afile="assets/3030_Feedback.mp3">
+					</btn_checkAnswer>
+				</activity_buttons>	
+				<activity_feedback>
+					<feedback_positive><![CDATA[Next steps were not recommended and no plan was agreed on]]></feedback_positive>
+					<feedback_negative><![CDATA[Next steps were not recommended and no plan was agreed on]]></feedback_negative>
+					</activity_feedback>
+			</activity>
+		</layer>
+		</sco>
+		
+	</section>
+</shell>

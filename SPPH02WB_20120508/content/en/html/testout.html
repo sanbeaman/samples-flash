@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test-Out</title>
+<link rel="stylesheet" type="text/css" href="css/html.css" />
+<style type="text/css">
+#page1 {display:block;}
+#page2 {display:none;}
+</style>
+<script type="text/javascript" SRC="js/scorm.js"></script>
+<script type="text/javascript" SRC="js/scormcookies.js"></script>
+<script type="text/javascript" SRC="js/ParameterParser.js"></script>
+<script type="text/javascript" SRC="js/perception.js"></script>
+<script type="text/javascript">
+<!--
+LMSInitialize();
+//LMSSetValue("cmi.completion_status", "completed");
+//LMSSetValue("cmi.success_status", "passed");
+//LMSCommit();
+function ViewPageTwo() {
+	var page1 = document.getElementById("page1");
+	var page2 = document.getElementById("page2");
+  page1.style.display = "none";
+	page2.style.display = "block";
+}
+function TakeCourse() {
+	LMSSetValue("adl.nav.request", "continue");
+	LMSTerminate();
+}
+-->
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginheight="0">
+<div style="width:755px">
+	<div id="page1">
+		<div style="height:100px">&nbsp;</div>
+		<h1>Test-Out Options</h1>
+		<table cellspacing="20" cellpadding="0" border="0" width="755">
+		<tr>
+			<td width="50%" valign="top">
+				If you select this option:
+				<ul>
+					<li>You may attempt the test-out one time</li>
+					<li>You must complete the test-out in 60 minutes or less</li>
+					<li>You must pass with a score of at least 80 percent</li>
+					<li>If the test-out is passed, the course content is available for review</li>
+					<li>If the test-out is not passed, all course completion requirements apply</li>
+				</ul>
+			</td>
+			<td width="50%" valign="top">
+				If you select this option:
+				<ul>
+					<li>You will proceed directly to the course</li>
+					<li>The test-out will not be offered again</li>
+					<li>You must meet all completion requirements to receive course credit</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td width="50%" align="center" valign="top">
+				<a href="#" class="take_testout_button" onClick="ViewPageTwo()">&nbsp;</a>
+			</td>
+			<td width="50%" align="center" valign="top">
+				<a href="#" class="take_course_button" onClick="TakeCourse()">&nbsp;</a>
+			</td>
+		</tr>
+		</table>
+	</div>
+	<div id="page2">
+		<div style="height:70px">&nbsp;</div>
+		<h1>Test-Out Confirmation</h1>
+		<div style="padding:0 150px">
+			Although anyone may attempt the Test-Out, you are most likely to be successful if:
+			<ul>
+				<li>You have ample time and a distraction-free environment in which to complete it</li>
+				<li>You have gained valuable course-related knowledge through significant job experience</li>
+				<li>You have reviewed and mastered course objectives</li>
+			</ul>
+			Course Objectives:
+			<ul>
+				<li>Identify when sales/marketing changes justify staff increases</li>
+				<li>Recognize typical organizational structures</li>
+				<li>Identify equipment and recommended proximity to major stations</li>
+				<li>Identify common storage methods for simple and oversize parts</li>
+				<li>Recognize common options to expand storage and increase its efficiency</li>
+			</ul>
+		</div>
+
+		<table cellspacing="20" cellpadding="0" border="0" width="755">
+		<tr>
+			<td width="50%" align="center" valign="top">
+				<a href="#" class="take_testout_button" onClick="TakeTest()">&nbsp;</a>
+			</td>
+			<td width="50%" align="center" valign="top">
+				<a href="#" class="take_course_button" onClick="TakeCourse()">&nbsp;</a>
+			</td>
+		</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+BODY
+{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color: #000033;
+	color:#ffffff;
+	background-image:url(../images/background.png);
+	background-repeat:no-repeat;
+	font-family:tahoma,arial,san serif;
+	font-size:12pt;
+	width:755px;
+}
+
+H1
+{
+	font-family:tahoma,arial,san serif;
+	font-size:16pt;
+	font-weight:bold;
+	text-align:center;
+}
+
+TD
+{
+	font-family:tahoma,arial,helvetica,san serif;
+	font-size:12pt;
+}
+
+#content
+{
+	padding:190px 100px 0 100px;
+	width:410px;
+	text-align:left;
+}
+
+#sco
+{
+	width:755px;
+}
+
+A.take_pretest_button
+{
+	background-image:url(../images/begin-pretest.gif);
+	width:217px;
+	height:33px;
+	text-decoration:none;
+	display:block;
+}
+
+A.take_pretest_button:hover
+{
+	background-image:url(../images/begin-pretest.gif);
+	width:217px;
+	height:33px;
+	background-position:217px 0;
+}
+
+A.take_testout_button
+{
+	background-image:url(../images/take-test-out.gif);
+	width:217px;
+	height:33px;
+	text-decoration:none;
+	display:block;
+}
+
+A.take_testout_button:hover
+{
+	background-image:url(../images/take-test-out.gif);
+	width:217px;
+	height:33px;
+	background-position:217px 0;
+}
+
+
+A.take_course_button
+{
+	background-image:url(../images/take-course.gif);
+	width:217px;
+	height:33px;
+	text-decoration:none;
+	display:block;
+}
+
+A.take_course_button:hover
+{
+	background-image:url(../images/take-course.gif);
+	width:217px;
+	height:33px;
+	background-position:217px 0;
+}
